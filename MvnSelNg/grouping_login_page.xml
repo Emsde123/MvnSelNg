@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <suite name="login">
+    <test name="login">
+        <classes>
+            // Below we have accomplished the same thing as grouping without using grouping.
+            // We just include the method names we want to run instead of the grouping tag.
+            <class name="mavenAndTestNG.hrm.login.LoginTests">
+            <methods>
+                <include name ="test_Login_Functionality_Is_Working"/>
+                <include name ="verify_user_is_not_able_to_login_invalid_credentials"/>
+            </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Regression">
+    <test name="Regression">
+        <classes>
+            // we didn't use two tags for each class because nothing is happening inside the class body.
+            // We can just close it inside the first tag.
+            <class name="mavenAndTestNG.assertions.AssertionsLesson2"/>
+            <class name="mavenAndTestNG.hrm.login.LoginTests"/>
+            <class name="mavenAndTestNG.hrm.jobTitles.JobTitlesPageTest"/>
+        </classes>
+    </test>
+</suite>

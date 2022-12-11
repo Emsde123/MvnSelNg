@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<suite name="Smoke">
+    <test name="Smoke">
+        <classes>
+            // The groups tag needs to be siblings with class tags.
+            <groups>
+                <run>
+                    // we're running all tests that include the name "Smoke"
+                    <include name="Smoke"/>
+                </run>
+            </groups>
+
+            <class name="mavenAndTestNG.assertions.AssertionsLesson2"/>
+            <class name="mavenAndTestNG.hrm.login.LoginTests"/>
+            <class name="mavenAndTestNG.hrm.jobTitles.JobTitlesPageTest"/>
+
+
+        </classes>
+
+    </test>
+
+
+</suite>

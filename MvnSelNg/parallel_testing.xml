@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<suite name="Parallel TestSuite" parallel ="tests" thread-count="2">
+
+ // Here we're doing parallel test executions, for each parallel execution we need a new test set.
+ // One of these are running in Chrome and one is Firefox, if we wanted to do IE for example
+ // We would need another test block to place our class in.
+
+
+
+ <test name="Test1">
+  <classes>
+   <class name="mavenAndTestNG.hrm.login.LoginTests"/>
+  </classes>
+ </test>
+
+
+
+ <test name="Test2">
+  <classes>
+  <class name="mavenAndTestNG.hrm.jobTitles.JobTitlesPageTest"/>
+  </classes>
+</test>
+
+
+
+</suite>
